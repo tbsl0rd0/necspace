@@ -1,3 +1,4 @@
 require './home.tpl.jade';
 
-require '../../components/hello/hello.coffee';
+if not Meteor.user()
+  FlowRouter.go '/login'
