@@ -12,6 +12,9 @@ Template.login.events
         console.log error
 
       else
-        FlowRouter.go '/'
+        FlowRouter.go 'id_manager'
 
     login_password_input.value = ''
+
+  'click .login_button': (event) ->
+    $('.login_form').submit()
